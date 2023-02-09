@@ -1,12 +1,7 @@
-#!/usr/bin/python3
+#!/bin/bash 
 # SPDX-FileCopyrightText: 2023 masasao　　　　　
 # SPDX-License-Identifier: BSD-3-Clause
 
-import sys
+out=$(./x 1 2 3 4 5)
 
-x = 1.0
-for n in sys.argv[1:]:
-        x *= float(n)
-
-print(x)
-
+[ "${out}" = 120.0 ]
