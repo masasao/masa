@@ -1,6 +1,4 @@
-# 課題3
-
-## xコマンド
+# xコマンド
 ![test](https://github.com/masasao/masa/actions/workflows/test.yml/badge.svg
 )  
 入力から読み込んだ数字すべての積を出すプログラムです。  
