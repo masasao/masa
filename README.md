@@ -10,7 +10,7 @@
 ### 例
 `$ seq 5 | ./x`  
 `120.0`  
-↑｛5×4×3×2×１｝
+↑{5×4×3×2×１｝
 
 ## インストール方法
 `$ git clone https://github.com/masasao/masa.git`  
