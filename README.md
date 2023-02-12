@@ -2,15 +2,15 @@
 ![test](https://github.com/masasao/masa/actions/workflows/test.yml/badge.svg
 )  
 入力から読み込んだ数字すべての積を出すプログラムです。  
-`$ ./x a b c ・・z`  
+`$ seq 数 | ./x`  
 とすると、  
-`abcdef・・・・xyz`  
+` {数×(数-1)×(数-2)×・・・・・×2×1}`  
 という計算結果が出ます。  
 
 ### 例
-`$ ./x 1 2 3 4 5`  
-`120.0`
-
+`$ seq 5 | ./x`  
+`120.0`  
+↑｛5×4×3×2×１｝
 
 ## インストール方法
 `$ git clone https://github.com/masasao/masa.git`  

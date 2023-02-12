@@ -4,9 +4,15 @@
 
 import sys
 
-x = 1.0
-for n in sys.argv[1:]:
-        x *= float(n)
+def tonum(s):
+        try:
+           return int(s) 
+        except:
+           return float(s)
 
-print(x)
+ans = 1
+for line in sys.stdin:
+    line = line.rstrip()
+    ans *= tonum(line)
 
+print(ans)

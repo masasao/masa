@@ -10,16 +10,17 @@ res=0
 + res=0
 
 
-out=$(./x 1 2 3 4 5)
+out=$(seq 5 | ./x)
 [ "${out}" = 120 ] || ng ${LINENO}
 
-out=$(./x あ )
+out=$(echo あ | ./x)
 [ "$?" = 1 ]      || ng ${LINENO}
 [ "${out}" = "" ] || ng ${LINENO}
 
-out=$(./x echo )
+out=$(echo | ./x)
 [ "$?" = 1 ]      || ng ${LINENO}
 [ "${out}" = "" ] || ng ${LINENO}
+
 
 
 [ "$res" = 0 ] && echo OK
