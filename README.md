@@ -25,4 +25,4 @@ ubuntu18.04 Windows
 ## ライセンス
 このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されています。  
 
-© 2023 masasao
+© 2023 Masanao Hayashi
